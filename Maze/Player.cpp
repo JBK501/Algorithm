@@ -69,16 +69,21 @@ void Player::Init(Board* board)
 
 	}
 
+	// 불필요한 이동 거르기
 	stack<Pos> s;
 
+	// 목적지 이전까지 반복한다.
 	for (int i = 0; i < _path.size() - 1; i++)
 	{
+		// 스택의 최상위 원소가 다음으로 가야하는 길과 일치하면(불 필요한 길을 이동하여 되돌아 가고 있는 경우임)
 		if (s.empty() == false && s.top() == _path[i + 1])
 		{
-			s.pop();
+			s.pop();	// 해당 위치를 삭제한다. (그곳으로 가는 경로를 없앤다)
 		}
-		else
-			s.push(_path[i]);
+		else  // 정상적인 길일 때 
+		{
+			s.push(_path[i]);	// 스택에 경로를 추가한다.
+		}
 	}
 
 	// 목적지 도착
@@ -94,6 +99,7 @@ void Player::Init(Board* board)
 		s.pop();
 	}
 
+	// 스택 특성상 경로가 역순으로 저장되어 있을 것이기 때문에 뒤집어준다.
 	std::reverse(path.begin(), path.end());
 
 	_path = path;
