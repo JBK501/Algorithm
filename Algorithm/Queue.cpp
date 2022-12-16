@@ -120,21 +120,21 @@ private:
 #pragma endregion
 
 
-int main()
-{
-	ArrayQueue<int> q;
-
-	for (int i = 0; i < 100; i++)
-	{
-		q.push(i);
-	}
-
-	while (q.empty() == false)
-	{
-		int value = q.front();
-		q.pop();
-		cout << value << endl;
-	}
-
-	int size = q.size();
-}
+//int main()
+//{
+//	ArrayQueue<int> q;
+//
+//	for (int i = 0; i < 100; i++)
+//	{
+//		q.push(i);
+//	}
+//
+//	while (q.empty() == false)
+//	{
+//		int value = q.front();
+//		q.pop();
+//		cout << value << endl;
+//	}
+//
+//	int size = q.size();
+//}
