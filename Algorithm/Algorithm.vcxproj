@@ -142,6 +142,7 @@
     <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="Bfs.cpp" />
     <ClCompile Include="Dfs.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Queue.cpp" />
