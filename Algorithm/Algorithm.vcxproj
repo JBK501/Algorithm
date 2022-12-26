@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="Bfs.cpp" />
+    <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Dfs.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="Graph.cpp" />
@@ -149,6 +150,9 @@
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Tree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinarySearchTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

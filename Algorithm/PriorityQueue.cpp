@@ -13,7 +13,8 @@
 //// -> i번 노드의 부모는 [(i - 1) / 2]번
 //
 //// 우선순위큐는 힙 트리구조 이다.
-//
+//// 제일 작은 값 혹은 제일 큰 값을 추출해야하는 경우가 있을 경우 우선적으로 떠올리면 좋다.
+//// predicate : 어떤 조건에 의해서 판별할지를 결정한다.
 //template<typename T, typename Container = vector<T>, typename Predicate = less<T>>
 //class PriorityQueue
 //{
@@ -26,7 +27,7 @@
 //		// 도장깨기 시작
 //		int now = static_cast<int>(_heap.size()) - 1;
 //
-//		// 루트 노드까지
+//		// 루트 노드까지 시도한다.
 //		while (now > 0)
 //		{
 //			// 부모 노드의 데이터와 비교해서 더 작으면 패배
@@ -54,7 +55,7 @@
 //			int right = 2 * now + 2;
 //
 //			// 리프에 도달한 경우
-//			if (left >= _heap.size())
+//			if (left >= (int)_heap.size())
 //				break;
 //
 //			int next = now;
@@ -66,6 +67,7 @@
 //				next = left;
 //
 //			// 둘 중 승자를 오른쪽과 비교
+//			// right가 항상 유효하다는 보장이 없음. 따라서 사이즈 체크를 해야 함.
 //			/*if (right < (int)_heap.size() && _heap[next] < _heap[right])
 //				next = right;*/
 //			if (right < (int)_heap.size() && _predicate(_heap[next], _heap[right]))
