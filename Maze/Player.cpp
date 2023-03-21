@@ -199,7 +199,7 @@ void Player::Bfs()
 	
 	_path.clear();
 
-	// 거꾸로 거슬러 올라간ㄴ다.
+	// 거꾸로 거슬러 올라간다.
 	pos = dest;
 
 	while (true)

@@ -144,11 +144,14 @@
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Dfs.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="HashTable.cpp" />
     <ClCompile Include="PriorityQueue.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="RedBlackTree.cpp" />
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Tree.cpp" />
   </ItemGroup>
